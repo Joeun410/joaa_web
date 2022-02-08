@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+    
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/navigationStyle.css">
+    <link rel="stylesheet" href="css/graphicPage.css">
+    <link rel="stylesheet" href="../public_html/js/cursor.js">
+    <script type="text/javascript" src="pageMove.js"> </script>
+    <script type="text/javascript"> 
+        //<![CDATA[
+        function calcHeight(){
+         //find the height of the internal page
+        
+         var the_height=
+         document.getElementById('the_iframe').contentWindow.
+         document.body.scrollHeight;
+        
+         //change the height of the iframe
+         document.getElementById('the_iframe').height=
+         the_height;
+        
+         //document.getElementById('the_iframe').scrolling = "no";
+         document.getElementById('the_iframe').style.overflow = "hidden";
+        }
+        //
+        </script>
+    <script src="https://kit.fontawesome.com/9e8296ac00.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+    <div class="cursor">
+  
+        <div class="cursor__ball cursor__ball--big ">
+          <svg height="30" width="30">
+            <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+          </svg>
+        </div>
+        
+        <div class="cursor__ball cursor__ball--small">
+          <svg height="10" width="10">
+            <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+          </svg>
+        </div>
+      </div>
+      
+    <nav class="navTop">
+        <div id="navImgTop">
+            <img src="img/nav_flower-07.png">
+        </div>
+        <div id="navImgTop">
+            <img src="img/nav_flower-07.png">
+        </div>
+
+        
+    </nav>
+    <nav class="navContainer">
+        
+            <div id="navImg">
+                <img src="img/joaa left-07.png">
+                
+            </div>
+
+            <!-- <div class="navContainer_title" >
+                <i class="fas fa-satellite-dish"></i>
+                <a href="">JOEUN KIM</a>
+                <i class="fas fa-satellite-dish"></i>
+            </div> -->
+
+            <div class="navContainer_menu" >
+                <li><a href="/public_html/sub_html/graphicPage.html">Work</a></li>
+                <li><a href="">About</a></li>
+
+                <div id="navContainer_title" >
+                    <li><a href=""><img src="img/joaa title-08.png" onclick="moveHome('home')"></a></li>
+                </div>
+
+                <li><a href="">@jo_an_ne__</a></li>
+            </div>
+
+            <div id="navImg_right">
+                <img src="img/joaa_right-09.png">
+            </div>  
+    </nav> 
+
+    <!-- 오 디브로 3개로 나눠야..구분이돼서 flex적용되네.. -->
+<div id="Container">
+    <!-- <div id="upRect">
+        <svg width="30" height="30">
+            <rect width="25" height="25" style="fill:rgb(255, 255, 255); stroke-width:1; stroke:rgb(0, 0, 0)">
+            </rect>
+        </svg>
+    </div> -->
+   
+    <div id="upContainer">
+        <div id="upContainer">
+            <img id="rectImg" src="img/rect-09.png">
+        <div>
+            <img id="homeImg" src="img/1_graphic.png">
+        </div>
+        <div> 
+            <img id="homeImg2" src="img/2_coding.png">
+        </div>
+       <div>
+            <img id="homeImg" src="img/3_3d.png">
+       </div>
+        <img id="rectImg" src="img/rect-09.png">
+    </div>
+        
+    </div>
+
+    <div id="downContainer">
+
+        <div id="downContainer_first">   
+            <iframe id="myiframe" src="../public_html/sub_html/graphicPage.html" frameborder="0"> 
+           </iframe> 
+           <script src="../public_html/js/iframeResizer.js"></script>
+           <script src="../public_html/js/main.js"></script>
+           
+        </div>
+
+        <div id="downContainer_second">   
+            <iframe id="myiframe2" src="../public_html/sub_html/3dPage.html" frameborder="0"> 
+           </iframe> 
+           <script src="../public_html/js/iframeResizer.js"></script>
+           <script src="../public_html/js/main3d.js"></script>
+   
+        </div>
+
+        <div id="downContainer_third">   
+            <iframe id="myiframe" src="../public_html/sub_html/codingPage.html" frameborder="0"> 
+           </iframe> 
+           <script src="../public_html/js/iframeResizer.js"></script>
+           <script src="../public_html/js/maincoding.js"></script>
+   
+        </div>
+        
+    </div>
+
+    <img src="img/bg.png">
+
+</div>
+    
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script><script  src="../public_html/js/cursor.js"></script>
+</body>
+
+
+</html>
+

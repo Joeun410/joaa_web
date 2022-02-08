@@ -1,0 +1,86 @@
+
+#sideBar{
+    position: fixed;
+    width:15vw;
+    height: 100vh;
+    
+    /* background-color: chartreuse; */
+    /* border-right: solid black 1pt; */
+    z-index: 100;
+    
+}
+
+#sideGrid{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottomGrid{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sideImg {
+   
+    position: relative;
+    top:30px;
+    width:100%;
+}
+
+#sideImg2{
+    /* position: fixed; */
+   
+    display: flex;
+    position: relative;
+    top:150px;
+    right: 15px;
+  
+    width:100%;
+}
+
+#sideImgDate{
+    position: relative;
+    top:600px;
+    width:65%;
+}
+
+#rotation_area{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#rotation_glowing {
+    width: 30%;
+    position: relative;
+    /* padding-left:10px; */
+    top:550px;
+    right: 20px;
+    animation: rotate_img 10s linear infinite ;
+    transform-origin: 50% 50%;
+}
+
+#rotation_EW {
+    width: 40%;
+    position: relative;
+    /* padding-left:10px; */
+    top:540px;
+    right: 10px;
+    animation: rotate_img 10s linear infinite ;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_img{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#lineContainer{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#bottomLine{
+    width: 65%;
+    position: relative;
+    top:570px;
+}

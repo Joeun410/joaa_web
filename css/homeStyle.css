@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Futura_PT_Medium';
+    src: url(font/FuturaPT/FuturaPT-Medium.eot) format("embedded-opentype"),
+    url(font/FuturaPT/FuturaPT-Medium.ttf) format("truetype"),
+    url(font/FuturaPT/FuturaPT-Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'NexonLv2Gothic_Medium';
+    src: url(font/NexonLv2Gothic/NEXON-Lv2-Gothic-Medium.ttf) format("truetype"),
+    url(font/NexonLv2Gothic/NEXON-Lv2-Gothic-Medium.woff) format("woff");
+}
+@font-face {
+    font-family: 'D-DINCondensed-Bold';
+    src: 
+    url(/public_html/css/font/FontsFree-Net-D-DINCondensed-Bold.ttf) format("truetype"),
+    
+}
+
+@font-face {
+    font-family: 'GT-Cinetype-Light';
+    src: 
+    url(/public_html/css/font/GT-Cinetype-Light.otf)
+    
+}
+
+body, html{
+    margin: 0;
+    /* overflow: hidden; */
+    cursor: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+body .cursor {
+    pointer-events: none;
+  }
+  body .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color-dodge;
+    z-index: 1000;
+  }
+  body .cursor__ball circle {
+    fill: #0859fc;
+  }
+
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+#Container{
+    background-image: url("../img/bg.png"); 
+    height: 100%;
+}
+
+#upRect{
+    display: flex;  
+    justify-content: space-between;
+}
+
+#upContainer {
+     display: flex; 
+    height: 65vh; 
+    flex-direction: row;
+
+    /* 이걸 해야 이미지 커지는 게 밖으로 안넘어감ㅇㅇ */
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#downContainer{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    /* height: 100%; */
+    /* overflow: hidden; */
+
+
+}
+#downContainer_first{
+    background-color: white;
+    
+    border-left: solid 1pt black;
+    border-top: solid 1pt black;
+    border-right: solid 1pt black;
+    border-bottom: solid 1pt black;
+    position: relative;
+    top:0px;
+}
+#downContainer_second{
+    background-color: white;
+    border-top: solid 1pt black;
+    border-bottom: solid 1pt black;
+
+    position: relative;
+    top:100px;
+
+}
+
+#downContainer_third{
+    background-color: white;
+  
+    /* border: solid 1pt black; */
+    border-top: solid 1pt black;
+    border-left: solid 1pt black;
+    border-bottom: solid 1pt black;
+
+    position: relative;
+    top:0px;
+
+}
+
+#homeImg{
+    position: relative;
+    top: -50px;
+    width:85%;
+    transition: 7s ease all;
+    /* 이걸 이미지 호버에 하면 커지기만 하는데 여기에 하니까 커졌다 줄어들었다 한당ㅎㅎ 신기 */
+}
+
+#homeImg2{
+    position: relative;
+    top: 20px;
+    width:85%;
+    transition: 7s ease all;
+}
+
+#rectImg{
+    position: relative;
+    top: -240px;
+    width:5%;
+}
+
+
+#homeImg:hover{
+    transform: scale(2);
+
+}
+
+#homeImg2:hover{
+    transform: scale(2);
+
+}
+
+@media screen and (max-width:768px){
+    #upContainer{
+        flex-direction:column;
+        width:100%;
+        align-items: flex-end;
+    } 
+    #homeImg{
+        width:50%;
+        
+    }
+}
+
+#myiframe{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#myiframe2{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#myiframe3{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+

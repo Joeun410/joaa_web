@@ -1,0 +1,314 @@
+@font-face {
+    font-family:'AcuminVariableConcept' ;
+    src: url(../font/Acumin\ Pro\ Condensed.ttf) ;
+}
+
+html,
+body {
+  word-wrap : break-word;
+  word-break: keep-all; 
+  /* cursor: none; */
+}
+
+
+#allContainer{
+    /* height: 100%; */
+    position: relative;
+    top:20px;
+    display: grid;
+    grid-template-columns:15vw auto;
+    /* z-index: 101; */
+
+}
+
+#mainContainer{
+    grid-column-start: 2;
+   
+    border-left:solid black 1pt;
+   
+}
+
+#upContainer{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-image: url(../../img/graphic/EW/bg.png);
+}
+
+
+#mainBG{
+    width:100%;
+}
+
+#title{
+    font-family:'AcuminVariableConcept' ;
+    padding-left: 100px;
+    padding-top: 80px;
+    font-size: 55pt;
+    color: rgb(255, 255, 255);
+}
+
+#infoContainer{
+    display: flex;
+    justify-content:flex-start;
+}
+
+#info{
+    font-family: 'NexonLv2Gothic_Light';
+    color: rgb(176, 176, 176);
+    font-size: 9pt;
+
+    margin-top:100px;
+    margin-left:100px;
+    margin-bottom:100px;
+    padding-right: 50px;
+
+    text-align: justify;
+
+    line-height: 200%;
+}
+
+#info2{
+    font-family: 'NexonLv2Gothic_Light';
+    color: rgb(176, 176, 176);
+    font-size: 9pt;
+    margin-top:100px;
+   margin-right:100px;
+   padding-left: 50px;
+   margin-bottom:100px;
+
+   border-left: solid rgb(157, 157, 157) 1px;
+  
+    text-align: justify;
+    line-height: 200%;
+}
+
+#infoTitle{
+    font-family: 'NexonLv2Gothic_Medium';
+    font-size: 15pt;
+    padding-bottom: 25px;
+}
+
+#infoTitleEn{
+    font-family: 'NexonLv2Gothic_Medium';
+    font-size: 18pt;
+    padding-bottom: 25px;
+}
+
+#contenContainer{
+}
+
+#video{
+   
+    padding-top:100px;
+    padding-left:130px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+   
+    width: 60%;
+}
+
+#infoImg{
+    padding-top: 0;
+    padding-left:100px;
+    width: 80%;
+}
+
+#explainContainer{
+    display: flex;
+    justify-content:flex-start;
+}
+
+#explain_1{
+    font-family: 'NexonLv2Gothic_Light';
+    color: rgb(0, 0, 0);
+    font-size: 9pt;
+
+    margin-top:50px;
+    margin-left:120px;
+    margin-bottom:100px;
+    padding-right: 100px;
+
+    text-align: justify;
+
+    line-height: 160%;
+}
+
+#explain_2{
+    font-family: 'NexonLv2Gothic_Light';
+    color: rgb(0, 0, 0);
+    font-size: 9pt;
+
+    margin-top:50px;
+   margin-right:200px;
+   padding-left: 100px;
+   margin-bottom:100px;
+
+   border-left: solid rgb(106, 106, 106) 1px;
+  
+    text-align: justify;
+    line-height: 160%;
+}
+
+
+#img1{
+    padding-left:120px;
+    width: 70%;
+}
+
+#explain{
+    font-family: 'NexonLv2Gothic_Light';
+    color: rgb(0, 0, 0);
+    font-size: 9pt;
+
+    /* margin-top:50px; */
+    margin-left:300px;
+    /* margin-bottom:100px; */
+    padding-right: 15px;
+    margin-right: 90px;
+
+    border-right: solid rgb(34, 103, 254) 2px;
+
+    text-align: right;
+
+    line-height: 200%;
+}
+
+#explainTitle{
+    font-family: 'NexonLv2Gothic_Medium';
+}
+
+#img2{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 80px;
+}
+
+#img3{
+    /* allign=ri; */
+    width: 50%;
+    padding-left: 250px;
+    padding-top: 50px;
+}
+#img4{
+    width: 47%;
+    /* padding-top: 80px; */
+}
+
+#imgContainer{
+    display:flex;
+    justify-content:space-around;
+     padding-top: 50px;
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+#explain2{
+    font-family: 'NexonLv2Gothic_Light';
+    color: rgb(0, 0, 0);
+    font-size: 9pt;
+
+    
+    margin-left:47px;
+    margin-top:50px;
+    margin-bottom:80px;
+   
+
+    padding-left: 15px;
+    margin-right: 300px;
+
+    border-left: solid rgb(34, 103, 254) 2px;
+
+    text-align: left;
+    line-height: 200%;
+}
+
+#imgContainer2{
+    display:flex;
+    padding-left:10px;
+    padding-right:60px;
+
+    justify-content:space-between
+     /* padding-top: 50px; */
+}
+
+#img_un1{
+    width: 50%;
+}
+#img_un2{
+    width: 50%;
+}
+
+#img_un3{
+    padding:50px;
+    width: 60%;
+}
+
+#unstableContainer{
+    display:flex;
+    justify-content: flex-start;
+}
+
+#explain3{
+    font-family: 'NexonLv2Gothic_Light';
+    color: rgb(0, 0, 0);
+    font-size: 9pt;
+
+    margin-top:390px;
+    /* margin-left:50px; */
+    /* margin-bottom:100px; */
+
+    padding-top: 15px;
+    margin-right: 90px;
+
+    border-top: solid rgb(34, 103, 254) 2px;
+
+    text-align: justify;
+
+    line-height: 200%;
+}
+
+
+#imgContainer3{
+    padding-right:50px;
+    padding-left:50px;
+    padding-top: 80px;
+    display:flex;
+    justify-content:space-between;
+     /* padding-top: 50px; */
+}
+
+#img_cir{
+    width: 50%;
+}
+#img_cir2{
+    width: 50%;
+}
+
+#img_good{
+    padding-left: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+}
+#img_good2{
+    padding-left: 50px;
+    width: 80%;
+}
+
+#imgContainer4{
+    padding-right:50px;
+    padding-left:50px;
+    /* padding-top: 80px; */
+    display:flex;
+    justify-content:space-between;
+     /* padding-top: 50px; */
+}
+
+#img_place{
+    width: 50%;
+}
+#img_place2{
+    width: 50%;
+}
+
+
